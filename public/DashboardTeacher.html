@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="DashboardStyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Teacher Dashboard</h1>
+        </header>
+        <main class="dashboard-content">
+            <div class="dashboard-grid">
+                <div class="dashboard-card" id="classInfo">
+                    <h2>Class Information</h2>
+                    <img src="images/teacher.png" alt="Teacher Info">
+                </div>
+
+                <div class="dashboard-card" id="updateTestInfo">
+                    <h2>Update Results</h2>
+                    <img src="images/Test.png" alt="Test Results">
+                </div>
+
+                <div class="dashboard-card" id="salaryInfo">
+                    <h2>Salary Information</h2>
+                    <img src="images/fees.png" alt="Fees Info">
+                </div>
+
+                <div class="dashboard-card" id="updateAttendanceInfo">
+                    <h2>Update Attendance</h2>
+                    <img src="images/attendance.png" alt="Attendance Info">
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--Modals-->
+    <div id="classModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Class Information</h2>
+            <p><strong>Name:</strong> DBMS Ma'am</p>
+            <p><strong>Subject:</strong> DBMS</p>
+            <p><strong>Contact:</strong> +91 2323232323</p>
+            <p><strong>Email:</strong> DBMSMaam@gmail.com</p>
+            <p><strong>Address:</strong> Manipal,UDUPI</p>
+        </div>
+    </div>
+    <div id="updateTestModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Test Information</h2>
+            <p><strong>Student ID:</strong> <input type="text" name="test_studentID" required></p>
+            <p><strong>Test ID:</strong> <input type="text" name="test_testID" required></p>
+            <p><strong>Marks Obtained:</strong> <input type="text" name="test_marksObtained" required></p>
+            <button type="submit">Enter Marks</button>
+        </div>
+    </div>
+    <div id="salaryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Salary Information</h2>
+            <p><strong>Pending:</strong> DBMS Oracle Subscription</p>
+            <p><strong>Amount to pay:</strong> Rs.50000</p>
+            <p><strong>Last Date:</strong> 27/4/2025</p>
+        </div>
+    </div>
+    <div id="updateAttendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Attendance Information</h2>
+            <p><strong>Subject</strong> DBMS</p>
+            <p><strong>Classes Done:</strong> 26</p>
+            <p><strong>Classes Attended:</strong> 20</p>
+            <p><strong>Classes Absent:</strong> 6</p>
+        </div>
+    </div>
+
+    <script src="DashboardTeacherScript.js"></script>
+</body>
+</html>
